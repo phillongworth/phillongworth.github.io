@@ -72,7 +72,7 @@
 			// basic map parameters:
 			gv_options.center = [53.708765,-1.97989];  // [latitude,longitude] - be sure to keep the square brackets
 			gv_options.zoom = 13;  // higher number means closer view; can also be 'auto' for automatic zoom/center based on map elements
-			gv_options.map_type = 'GV_STREET';  // popular map_type choices are 'GV_STREET', 'GV_SATELLITE', 'GV_HYBRID', 'GV_TERRAIN', 'GV_OSM', 'GV_TOPO_US', 'GV_TOPO_WORLD' (https://www.gpsvisualizer.com/misc/leaflet_map_types.html)
+			gv_options.map_type = 'TF_OUTDOORS';  // popular map_type choices are 'GV_STREET', 'GV_SATELLITE', 'GV_HYBRID', 'GV_TERRAIN', 'GV_OSM', 'GV_TOPO_US', 'GV_TOPO_WORLD' (https://www.gpsvisualizer.com/misc/leaflet_map_types.html)
 			gv_options.map_opacity = 1.00;  // number from 0 to 1
 			gv_options.full_screen = true;  // true|false: should the map fill the entire page (or frame)?
 			gv_options.width = 700;  // width of the map, in pixels
@@ -99,7 +99,7 @@
 			gv_options.map_opacity_control = false;  // true|false
 			gv_options.map_type_control = {};  // widget to change the background map
 			  gv_options.map_type_control.visible = 'auto'; // true|false|'auto': is a map type control placed on the map itself?
-			  gv_options.map_type_control.filter = false;  // true|false: when map loads, are irrelevant maps ignored?
+			  gv_options.map_type_control.filter = true;  // true|false: when map loads, are irrelevant maps ignored?
 			  gv_options.map_type_control.excluded = [];  // comma-separated list of quoted map IDs that will never show in the list ('included' also works)
 			gv_options.center_coordinates = true;  // true|false: show a "center coordinates" box and crosshair?
 			gv_options.measurement_tools = true; // true|false: put a measurement ruler on the map?
@@ -178,7 +178,7 @@
 		</style>
 		
 		<!-- end GPSV setup script and styles; begin map-drawing script (they must be separate) -->
-		<script type="text/javascript">
+68		<script type="text/javascript">
 			function GV_Map() {
 				GV_Setup_Map();
 				
@@ -481,7 +481,7 @@
 				// Track #38
 				t = 38; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|34/4'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.77347,-1.87918],[53.77349,-1.87917],[53.77351,-1.87916],[53.77353,-1.87913],[53.77358,-1.87906],[53.77358,-1.87905],[53.77361,-1.87899],[53.77364,-1.87891],[53.77373,-1.87871],[53.77377,-1.87862],[53.77379,-1.87858],[53.77381,-1.87854],[53.77384,-1.87851],[53.77388,-1.87848],[53.77398,-1.87843],[53.77401,-1.87843] ] });
 				GV_Draw_Track(t);
@@ -489,7 +489,7 @@
 				// Track #39
 				t = 39; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|34/6'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.77432,-1.87895],[53.77435,-1.87901],[53.77439,-1.87908],[53.77441,-1.87911],[53.77444,-1.87914],[53.77451,-1.8792],[53.77457,-1.87925],[53.7746,-1.87926],[53.77479,-1.87937],[53.77484,-1.8794],[53.77496,-1.87948],[53.77506,-1.87955],[53.77513,-1.87959],[53.77515,-1.87961] ] });
 				GV_Draw_Track(t);
@@ -497,7 +497,7 @@
 				// Track #40
 				t = 40; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|34/5'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.77401,-1.87843],[53.77403,-1.87844],[53.77405,-1.87846],[53.77406,-1.87849],[53.77416,-1.87873],[53.77418,-1.87877],[53.7742,-1.8788],[53.77422,-1.87882],[53.77426,-1.87887],[53.7743,-1.87891],[53.77431,-1.87892],[53.77432,-1.87895] ] });
 				GV_Draw_Track(t);
@@ -505,7 +505,7 @@
 				// Track #41
 				t = 41; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|55/2'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.76413,-1.8923],[53.76398,-1.89188],[53.76396,-1.89181],[53.76394,-1.89176],[53.76394,-1.89171],[53.76395,-1.89161],[53.76397,-1.89126],[53.76399,-1.89083],[53.764,-1.89054],[53.76399,-1.89044],[53.76397,-1.89034],[53.76392,-1.89015],[53.76387,-1.88999],[53.76381,-1.88982],[53.76376,-1.88969],[53.76371,-1.88956] ] });
 				GV_Draw_Track(t);
@@ -513,7 +513,7 @@
 				// Track #42
 				t = 42; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|55/1'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.76421,-1.89546],[53.76423,-1.89505],[53.76425,-1.89459],[53.76428,-1.89403],[53.76431,-1.89356],[53.76431,-1.8934],[53.7643,-1.89304],[53.76429,-1.89291],[53.76427,-1.89276],[53.76425,-1.89264],[53.76413,-1.8923] ] });
 				GV_Draw_Track(t);
@@ -2137,7 +2137,7 @@
 				// Track #245
 				t = 245; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|5/1'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.78124,-1.91534],[53.78129,-1.9146],[53.78138,-1.91393],[53.78153,-1.91314] ] });
 				GV_Draw_Track(t);
@@ -2145,7 +2145,7 @@
 				// Track #246
 				t = 246; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|95/1'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.75218,-1.9287],[53.75213,-1.92817],[53.7521,-1.9279],[53.75208,-1.92752],[53.75204,-1.92696],[53.75203,-1.92678],[53.75203,-1.92664],[53.75204,-1.92637],[53.75204,-1.926] ] });
 				GV_Draw_Track(t);
@@ -2153,7 +2153,7 @@
 				// Track #247
 				t = 247; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|191/1'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.74679,-1.92574],[53.74663,-1.92546],[53.74652,-1.92527],[53.74644,-1.92514],[53.74636,-1.92499],[53.74631,-1.92492],[53.74627,-1.92486],[53.74619,-1.92476],[53.74606,-1.92461],[53.74592,-1.92445],[53.74584,-1.92435] ] });
 				GV_Draw_Track(t);
@@ -2161,7 +2161,7 @@
 				// Track #248
 				t = 248; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|265/1'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.74885,-1.92581],[53.74867,-1.92546],[53.74833,-1.92477],[53.74789,-1.92391] ] });
 				GV_Draw_Track(t);
@@ -2169,7 +2169,7 @@
 				// Track #249
 				t = 249; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|197/2'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.75098,-1.92665],[53.75072,-1.92648],[53.75065,-1.92645],[53.75058,-1.92642],[53.75039,-1.92637],[53.75017,-1.92631],[53.75,-1.92626],[53.74969,-1.92619],[53.74943,-1.92612],[53.74924,-1.92607],[53.74913,-1.92605],[53.74905,-1.92603],[53.74897,-1.926] ] });
 				GV_Draw_Track(t);
@@ -2177,7 +2177,7 @@
 				// Track #250
 				t = 250; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|197/1'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.75204,-1.926],[53.75198,-1.92613],[53.7519,-1.92627],[53.75185,-1.92636],[53.75179,-1.92643],[53.75174,-1.92648],[53.75169,-1.92651],[53.7516,-1.92656],[53.75149,-1.9266],[53.75142,-1.92663],[53.75125,-1.92666],[53.75117,-1.92667],[53.75104,-1.92666],[53.75098,-1.92665] ] });
 				GV_Draw_Track(t);
@@ -2185,7 +2185,7 @@
 				// Track #251
 				t = 251; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|95/2'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.75204,-1.926],[53.75206,-1.92573],[53.75208,-1.92552],[53.75209,-1.92542],[53.75212,-1.92534],[53.75213,-1.92527],[53.75216,-1.92522],[53.75219,-1.92517],[53.75231,-1.92501] ] });
 				GV_Draw_Track(t);
@@ -2193,7 +2193,7 @@
 				// Track #252
 				t = 252; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|188/5'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.74381,-1.92619],[53.74378,-1.92608],[53.74377,-1.92605],[53.74376,-1.92603],[53.74373,-1.92601],[53.74357,-1.92593],[53.74343,-1.92585],[53.7434,-1.92583],[53.74337,-1.92579],[53.74334,-1.92574],[53.7433,-1.92567],[53.74323,-1.92537],[53.74314,-1.92485],[53.74312,-1.92464],[53.7431,-1.92456],[53.74307,-1.92448],[53.743,-1.92433],[53.74289,-1.92415],[53.74277,-1.92397] ] });
 				GV_Draw_Track(t);
@@ -2201,7 +2201,7 @@
 				// Track #253
 				t = 253; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|191/4'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.74397,-1.92357],[53.74383,-1.92359],[53.74369,-1.92362],[53.74362,-1.92364],[53.74353,-1.92365],[53.74339,-1.92369],[53.74326,-1.92373],[53.74316,-1.92377],[53.74299,-1.92384],[53.74284,-1.92392],[53.74277,-1.92397] ] });
 				GV_Draw_Track(t);
@@ -2217,7 +2217,7 @@
 				// Track #255
 				t = 255; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|191/3'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.74423,-1.9236],[53.74421,-1.92359],[53.74414,-1.92358],[53.74411,-1.92357],[53.74407,-1.92357],[53.744,-1.92357],[53.74397,-1.92357] ] });
 				GV_Draw_Track(t);
@@ -2249,7 +2249,7 @@
 				// Track #259
 				t = 259; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|143/1'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.75444,-1.93285],[53.7544,-1.93291],[53.75438,-1.93294],[53.75432,-1.933],[53.75424,-1.93307],[53.75409,-1.93321],[53.75406,-1.93325],[53.75402,-1.93331],[53.75391,-1.93354],[53.75385,-1.93365],[53.75382,-1.9337],[53.75376,-1.93381],[53.75369,-1.93397],[53.75366,-1.93403],[53.75363,-1.93408],[53.75356,-1.93417],[53.75347,-1.93429],[53.75343,-1.93436],[53.75338,-1.93442],[53.75331,-1.93449] ] });
 				GV_Draw_Track(t);
@@ -2257,7 +2257,7 @@
 				// Track #260
 				t = 260; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|113/1'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.75651,-1.92929],[53.75662,-1.92944],[53.75669,-1.92954],[53.75671,-1.92958],[53.75678,-1.92971],[53.75688,-1.9299] ] });
 				GV_Draw_Track(t);
@@ -2305,7 +2305,7 @@
 				// Track #266
 				t = 266; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|264/1'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.74943,-1.91932],[53.7494,-1.91927],[53.74935,-1.91921],[53.74933,-1.91918],[53.74924,-1.91912],[53.74908,-1.91902],[53.74905,-1.91901],[53.74893,-1.91898],[53.74888,-1.91896] ] });
 				GV_Draw_Track(t);
@@ -2313,7 +2313,7 @@
 				// Track #267
 				t = 267; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|95/3'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.75231,-1.92501],[53.75234,-1.92481],[53.75246,-1.92406],[53.75248,-1.92397],[53.75254,-1.92383],[53.7526,-1.92369],[53.75265,-1.9236],[53.75271,-1.92349],[53.75279,-1.92337],[53.75289,-1.92322],[53.75295,-1.92313],[53.75297,-1.92307],[53.75301,-1.92295] ] });
 				GV_Draw_Track(t);
@@ -2329,7 +2329,7 @@
 				// Track #269
 				t = 269; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|95/5'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.75347,-1.92133],[53.75347,-1.92122],[53.75347,-1.92114],[53.75347,-1.92063],[53.75347,-1.92042],[53.75347,-1.92026],[53.75349,-1.91997],[53.7535,-1.91981],[53.75352,-1.91951],[53.75355,-1.91917],[53.75357,-1.91878],[53.75357,-1.91869],[53.75358,-1.91862] ] });
 				GV_Draw_Track(t);
@@ -2337,7 +2337,7 @@
 				// Track #270
 				t = 270; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|188/3'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.74493,-1.92856],[53.7449,-1.92849],[53.74485,-1.92838],[53.74478,-1.92818],[53.74474,-1.92808] ] });
 				GV_Draw_Track(t);
@@ -2345,7 +2345,7 @@
 				// Track #271
 				t = 271; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|188/2'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.7451,-1.92842],[53.74506,-1.92844],[53.745,-1.92849],[53.74493,-1.92856] ] });
 				GV_Draw_Track(t);
@@ -2361,7 +2361,7 @@
 				// Track #273
 				t = 273; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|188/1'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.7482,-1.92819],[53.74803,-1.92818],[53.74775,-1.92816],[53.74766,-1.92816],[53.74759,-1.92815],[53.74752,-1.92813],[53.74744,-1.92811],[53.74725,-1.92805],[53.7472,-1.92804],[53.74716,-1.92805],[53.7471,-1.92808],[53.7469,-1.92823],[53.74685,-1.92825],[53.74682,-1.92827],[53.74679,-1.92829],[53.74675,-1.92831],[53.74667,-1.92835],[53.7466,-1.92837],[53.74654,-1.92839],[53.74642,-1.92841],[53.74628,-1.92842],[53.74613,-1.92843],[53.74607,-1.92843],[53.746,-1.92842],[53.74591,-1.92841],[53.74581,-1.92839],[53.74558,-1.92836],[53.74551,-1.92834],[53.74548,-1.92835],[53.74546,-1.92835],[53.7454,-1.92837],[53.74536,-1.92838],[53.74518,-1.92841],[53.7451,-1.92842] ] });
 				GV_Draw_Track(t);
@@ -2425,7 +2425,7 @@
 				// Track #281
 				t = 281; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|95/6'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.75358,-1.91862],[53.75359,-1.91844],[53.7536,-1.91825],[53.7536,-1.91816],[53.7536,-1.91804],[53.75359,-1.91794],[53.75357,-1.91772],[53.75354,-1.91741],[53.75354,-1.91735] ] });
 				GV_Draw_Track(t);
@@ -2465,7 +2465,7 @@
 				// Track #286
 				t = 286; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|1/5'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.78255,-1.91921],[53.78222,-1.9184],[53.78219,-1.91835],[53.78203,-1.91807],[53.78198,-1.91796],[53.78191,-1.91784],[53.78189,-1.91778],[53.78182,-1.91763],[53.78178,-1.91749],[53.78174,-1.91738],[53.7817,-1.91727],[53.78167,-1.91715],[53.78165,-1.91708],[53.78155,-1.91665],[53.78142,-1.91604],[53.7814,-1.91596],[53.78137,-1.91589],[53.78129,-1.91564],[53.78127,-1.91558],[53.78125,-1.91552],[53.78124,-1.91542],[53.78124,-1.91534] ] });
 				GV_Draw_Track(t);
@@ -2633,7 +2633,7 @@
 				// Track #307
 				t = 307; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|114/2'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.7641,-1.93067],[53.76408,-1.93058],[53.76408,-1.93053],[53.76406,-1.93049],[53.76402,-1.93043],[53.76399,-1.93037],[53.76392,-1.93023],[53.76385,-1.93013],[53.76376,-1.93],[53.76365,-1.92987],[53.76355,-1.92973],[53.76338,-1.92951],[53.76333,-1.92944],[53.76305,-1.92915],[53.76291,-1.92901],[53.76279,-1.92889],[53.76273,-1.9288],[53.76269,-1.92874],[53.76266,-1.92868],[53.76264,-1.92861],[53.76261,-1.92855],[53.7626,-1.92851],[53.76256,-1.92845],[53.76254,-1.92841],[53.76252,-1.92835],[53.76246,-1.92819],[53.76244,-1.9281] ] });
 				GV_Draw_Track(t);
@@ -2641,7 +2641,7 @@
 				// Track #308
 				t = 308; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|115/1'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.7641,-1.93067],[53.76407,-1.93069],[53.76405,-1.9307],[53.76401,-1.93071],[53.76384,-1.93075],[53.76363,-1.93081],[53.7635,-1.93085],[53.76327,-1.93092],[53.76323,-1.93093],[53.7632,-1.93093],[53.76316,-1.93093] ] });
 				GV_Draw_Track(t);
@@ -2649,7 +2649,7 @@
 				// Track #309
 				t = 309; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|113/6'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.76321,-1.93204],[53.76324,-1.9321],[53.76333,-1.93219],[53.76359,-1.93246],[53.76383,-1.9327],[53.76406,-1.93293],[53.76415,-1.93304],[53.76423,-1.93315],[53.76427,-1.93321],[53.76431,-1.93327],[53.76436,-1.93332],[53.76443,-1.93337],[53.76452,-1.93341],[53.76467,-1.93345],[53.76487,-1.93351],[53.76498,-1.93355],[53.76505,-1.93359],[53.7651,-1.93362],[53.76515,-1.93366],[53.76519,-1.9337],[53.76527,-1.93376],[53.76537,-1.93387],[53.76553,-1.93405],[53.76577,-1.93434],[53.76597,-1.93458],[53.76606,-1.9347],[53.76609,-1.93475],[53.76613,-1.93484],[53.76617,-1.93492],[53.7662,-1.93498],[53.76627,-1.93517],[53.76636,-1.93544],[53.76644,-1.93564] ] });
 				GV_Draw_Track(t);
@@ -2657,7 +2657,7 @@
 				// Track #310
 				t = 310; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|114/1'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.76321,-1.93204],[53.76323,-1.93201],[53.76326,-1.93199],[53.76331,-1.93197],[53.76341,-1.93194],[53.76351,-1.93191],[53.76368,-1.93187],[53.76379,-1.93184],[53.76387,-1.93183],[53.76392,-1.93181],[53.76397,-1.93177],[53.764,-1.93174],[53.76402,-1.93171],[53.76404,-1.93168],[53.76406,-1.93164],[53.76407,-1.93159],[53.76408,-1.93149],[53.76409,-1.93135],[53.7641,-1.93102],[53.76411,-1.93083],[53.76411,-1.93075],[53.7641,-1.93067] ] });
 				GV_Draw_Track(t);
@@ -2665,7 +2665,7 @@
 				// Track #311
 				t = 311; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|191/2'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.74584,-1.92435],[53.74575,-1.92424],[53.74569,-1.92419],[53.74565,-1.92416],[53.7456,-1.92413],[53.74551,-1.92409],[53.74545,-1.92407],[53.7453,-1.924],[53.74512,-1.92392],[53.74507,-1.9239],[53.74487,-1.92382],[53.7447,-1.92375],[53.74451,-1.92368],[53.74439,-1.92364],[53.74423,-1.9236] ] });
 				GV_Draw_Track(t);
@@ -2697,7 +2697,7 @@
 				// Track #315
 				t = 315; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|1/4'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.78277,-1.91981],[53.78273,-1.91968],[53.78255,-1.91921] ] });
 				GV_Draw_Track(t);
@@ -2705,7 +2705,7 @@
 				// Track #316
 				t = 316; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|3/3'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.78255,-1.91921],[53.78257,-1.91921],[53.78261,-1.91924],[53.78265,-1.91925],[53.7827,-1.91925],[53.78273,-1.91925],[53.78276,-1.91925],[53.78279,-1.91924],[53.78286,-1.9192] ] });
 				GV_Draw_Track(t);
@@ -2713,7 +2713,7 @@
 				// Track #317
 				t = 317; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|3/2'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.78277,-1.91981],[53.7828,-1.91978],[53.7828,-1.91962],[53.7828,-1.91953],[53.78282,-1.91942],[53.78284,-1.91928],[53.78286,-1.9192] ] });
 				GV_Draw_Track(t);
@@ -2721,7 +2721,7 @@
 				// Track #318
 				t = 318; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|1/3'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.78454,-1.92245],[53.78442,-1.92182],[53.78438,-1.92165],[53.78437,-1.92162],[53.78437,-1.9216],[53.78436,-1.92158],[53.78436,-1.92157],[53.78435,-1.92156],[53.78435,-1.92154],[53.78434,-1.92153],[53.78431,-1.92147],[53.78428,-1.92143],[53.78417,-1.92136],[53.78408,-1.92133],[53.78397,-1.92122],[53.78393,-1.92115],[53.78384,-1.92111],[53.78381,-1.9211],[53.78378,-1.92107],[53.78375,-1.92104],[53.78372,-1.92101],[53.78354,-1.92079],[53.78343,-1.92065],[53.78336,-1.92055],[53.78331,-1.92047],[53.78315,-1.92029],[53.783,-1.9201],[53.78283,-1.9199],[53.78281,-1.91988],[53.78279,-1.91985],[53.78278,-1.91983],[53.78277,-1.91981] ] });
 				GV_Draw_Track(t);
@@ -2729,7 +2729,7 @@
 				// Track #319
 				t = 319; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|3/1'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.78286,-1.9192],[53.78306,-1.91878],[53.78323,-1.9183],[53.78331,-1.91818] ] });
 				GV_Draw_Track(t);
@@ -2737,7 +2737,7 @@
 				// Track #320
 				t = 320; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|1/2'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.78714,-1.92626],[53.78705,-1.92621],[53.78693,-1.92616],[53.78688,-1.92614],[53.78685,-1.92614],[53.78682,-1.92614],[53.78679,-1.92616],[53.78672,-1.9262],[53.78655,-1.92629],[53.78652,-1.92631],[53.78648,-1.92631],[53.78645,-1.92629],[53.78642,-1.92627],[53.78637,-1.9262],[53.78634,-1.92618],[53.78632,-1.92616],[53.78629,-1.92615],[53.78614,-1.92612],[53.78603,-1.92607],[53.78599,-1.92606],[53.7859,-1.92598],[53.7857,-1.9258],[53.7856,-1.9257],[53.78556,-1.92564],[53.78547,-1.92548],[53.78543,-1.92542],[53.78513,-1.92512],[53.78512,-1.92511],[53.78511,-1.92509],[53.78511,-1.92508],[53.78495,-1.92438],[53.78495,-1.92436],[53.78493,-1.92431],[53.78483,-1.92403],[53.78478,-1.92387],[53.78477,-1.92385],[53.78473,-1.92371],[53.7847,-1.9236],[53.78467,-1.92345],[53.78465,-1.92335],[53.78463,-1.92319],[53.78457,-1.92267],[53.78457,-1.92262],[53.78456,-1.92258],[53.78456,-1.92256],[53.78455,-1.92251],[53.78455,-1.92247],[53.78454,-1.92245] ] });
 				GV_Draw_Track(t);
@@ -2745,7 +2745,7 @@
 				// Track #321
 				t = 321; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|1/1'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.78746,-1.92689],[53.78731,-1.92658],[53.78714,-1.92626] ] });
 				GV_Draw_Track(t);
@@ -2753,7 +2753,7 @@
 				// Track #322
 				t = 322; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|113/7'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.76644,-1.93564],[53.7665,-1.93579],[53.76657,-1.93593],[53.76666,-1.9361],[53.76674,-1.93625],[53.76683,-1.9364],[53.76689,-1.93651],[53.76698,-1.93669],[53.76714,-1.93701],[53.76733,-1.93741],[53.76742,-1.9376],[53.76748,-1.9377],[53.76753,-1.93776],[53.76757,-1.9378],[53.76762,-1.93784],[53.76765,-1.93786],[53.76773,-1.93789],[53.76778,-1.9379],[53.76783,-1.93789],[53.76787,-1.93787],[53.7679,-1.93783],[53.76801,-1.93761],[53.76808,-1.93748],[53.76814,-1.93736] ] });
 				GV_Draw_Track(t);
@@ -2761,7 +2761,7 @@
 				// Track #323
 				t = 323; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|265/2'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.74789,-1.92391],[53.74763,-1.92343],[53.74748,-1.92321],[53.74705,-1.92258],[53.74693,-1.92241],[53.74689,-1.92237],[53.7467,-1.92231],[53.74632,-1.92221],[53.74558,-1.92202],[53.74496,-1.92185] ] });
 				GV_Draw_Track(t);
@@ -2769,7 +2769,7 @@
 				// Track #324
 				t = 324; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|268/1'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.74474,-1.92251],[53.74496,-1.92185] ] });
 				GV_Draw_Track(t);
@@ -2777,7 +2777,7 @@
 				// Track #325
 				t = 325; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|268/2'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.74496,-1.92185],[53.74507,-1.92153],[53.74521,-1.92114],[53.74534,-1.92079],[53.74542,-1.92055],[53.74548,-1.92037],[53.7455,-1.92031],[53.74559,-1.92002],[53.74567,-1.91976],[53.74572,-1.91958],[53.74579,-1.91939],[53.74582,-1.9193],[53.74585,-1.91923] ] });
 				GV_Draw_Track(t);
@@ -2785,7 +2785,7 @@
 				// Track #326
 				t = 326; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|264/2'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.74888,-1.91896],[53.74883,-1.919],[53.7488,-1.91904],[53.74868,-1.91924],[53.74857,-1.91939],[53.74848,-1.91952],[53.74838,-1.91965],[53.74837,-1.91967],[53.74834,-1.91969],[53.74823,-1.91976],[53.7482,-1.9198],[53.74817,-1.91981],[53.74809,-1.91986],[53.74791,-1.91992],[53.74773,-1.91999],[53.74762,-1.92003],[53.7476,-1.92002],[53.74749,-1.91997],[53.74718,-1.91983],[53.74696,-1.91973],[53.74664,-1.91958],[53.74639,-1.91946],[53.74612,-1.91933],[53.74594,-1.91925],[53.74589,-1.91923],[53.74585,-1.91923] ] });
 				GV_Draw_Track(t);
@@ -2793,7 +2793,7 @@
 				// Track #327
 				t = 327; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|268/3'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.74585,-1.91923],[53.74571,-1.91918],[53.74568,-1.91914],[53.74567,-1.9191],[53.74566,-1.91905],[53.74567,-1.91896],[53.74569,-1.91883],[53.74572,-1.91859],[53.74579,-1.91813],[53.74585,-1.91774],[53.74592,-1.91731],[53.74597,-1.91702],[53.74601,-1.91675],[53.74605,-1.91644],[53.74609,-1.91615],[53.74612,-1.91593],[53.74616,-1.91577] ] });
 				GV_Draw_Track(t);
@@ -2825,7 +2825,7 @@
 				// Track #331
 				t = 331; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|268/4'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.74616,-1.91577],[53.74621,-1.91539],[53.74622,-1.91528],[53.74623,-1.91515] ] });
 				GV_Draw_Track(t);
@@ -2985,7 +2985,7 @@
 				// Track #351
 				t = 351; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|113/8'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.76814,-1.93736],[53.76823,-1.93719],[53.76825,-1.93717],[53.76827,-1.93716],[53.76834,-1.93715],[53.76885,-1.93711],[53.76912,-1.93708],[53.76916,-1.93707],[53.76919,-1.93704],[53.76922,-1.93701],[53.76932,-1.93685],[53.76964,-1.93643],[53.77007,-1.93585],[53.77042,-1.93538],[53.77051,-1.93525],[53.77052,-1.93522],[53.77052,-1.9352],[53.77052,-1.93517],[53.77051,-1.93513],[53.77048,-1.93506],[53.77045,-1.93499],[53.77043,-1.93491],[53.77042,-1.93486],[53.77041,-1.93481],[53.77042,-1.93477],[53.77043,-1.93473],[53.77045,-1.93465],[53.77047,-1.9346],[53.77049,-1.93453] ] });
 				GV_Draw_Track(t);
@@ -2993,7 +2993,7 @@
 				// Track #352
 				t = 352; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|123/1'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#9ACD32'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.76862,-1.92823],[53.76859,-1.92858],[53.7686,-1.92862],[53.76861,-1.92866],[53.76862,-1.9287],[53.76866,-1.92875],[53.76875,-1.92886],[53.76888,-1.92901],[53.76891,-1.92905],[53.76894,-1.92909],[53.76901,-1.9292],[53.76905,-1.92928] ] });
 				GV_Draw_Track(t);
@@ -3001,7 +3001,7 @@
 				// Track #353
 				t = 353; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|123/2'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#9ACD32'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.76905,-1.92928],[53.76915,-1.9295],[53.76924,-1.92974],[53.76931,-1.92993],[53.7694,-1.93022],[53.76943,-1.93028],[53.76946,-1.93033],[53.7695,-1.93039],[53.76954,-1.9305],[53.76961,-1.93073] ] });
 				GV_Draw_Track(t);
@@ -3009,7 +3009,7 @@
 				// Track #354
 				t = 354; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|123/3'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#9ACD32'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.76961,-1.93073],[53.76975,-1.93112],[53.76986,-1.93134],[53.76995,-1.93152],[53.77006,-1.93177] ] });
 				GV_Draw_Track(t);
@@ -3017,7 +3017,7 @@
 				// Track #355
 				t = 355; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|123/4'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#9ACD32'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.77006,-1.93177],[53.77035,-1.93248],[53.77056,-1.93304],[53.77063,-1.93325],[53.77068,-1.93341] ] });
 				GV_Draw_Track(t);
@@ -3025,7 +3025,7 @@
 				// Track #356
 				t = 356; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|113/9'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.77049,-1.93453],[53.77051,-1.93446],[53.77051,-1.9344],[53.77051,-1.93435],[53.77051,-1.9343],[53.7705,-1.93429],[53.77049,-1.93427],[53.77047,-1.93424],[53.77046,-1.9342],[53.77045,-1.93416],[53.77044,-1.93408],[53.77044,-1.93401] ] });
 				GV_Draw_Track(t);
@@ -3033,7 +3033,7 @@
 				// Track #357
 				t = 357; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|113/10'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.77044,-1.93401],[53.77045,-1.93387],[53.77046,-1.93377],[53.77048,-1.93369],[53.77054,-1.93352],[53.77056,-1.93348],[53.77061,-1.93341],[53.77065,-1.93339],[53.77068,-1.93341] ] });
 				GV_Draw_Track(t);
@@ -3041,7 +3041,7 @@
 				// Track #358
 				t = 358; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|113/2'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.75688,-1.9299],[53.75701,-1.93012],[53.75736,-1.93073],[53.75763,-1.93117],[53.75778,-1.93143],[53.75794,-1.93171],[53.7581,-1.93199],[53.75824,-1.93222],[53.75833,-1.93237],[53.7584,-1.93248],[53.75847,-1.93258],[53.75849,-1.9326],[53.75855,-1.93267],[53.75861,-1.93276] ] });
 				GV_Draw_Track(t);
@@ -3049,7 +3049,7 @@
 				// Track #359
 				t = 359; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|115/4'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.7601,-1.92946],[53.76007,-1.92942],[53.76004,-1.92937],[53.75999,-1.92927],[53.75994,-1.92916],[53.75986,-1.92897],[53.7597,-1.92863],[53.75953,-1.9283],[53.7595,-1.92826],[53.75947,-1.92823],[53.75943,-1.92821],[53.75938,-1.92821],[53.75932,-1.92823],[53.75914,-1.92836],[53.75907,-1.9284],[53.75891,-1.92848],[53.75876,-1.92857],[53.75865,-1.92864],[53.75822,-1.92898],[53.75793,-1.9292],[53.75764,-1.92943],[53.75727,-1.92972],[53.75705,-1.92988],[53.75702,-1.9299],[53.75698,-1.92992],[53.75693,-1.92991],[53.75688,-1.9299] ] });
 				GV_Draw_Track(t);
@@ -3057,7 +3057,7 @@
 				// Track #360
 				t = 360; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|113/3'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.75861,-1.93276],[53.7587,-1.93283],[53.75879,-1.93292],[53.75884,-1.93297],[53.75892,-1.93305],[53.75897,-1.93309] ] });
 				GV_Draw_Track(t);
@@ -3065,7 +3065,7 @@
 				// Track #361
 				t = 361; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|113/4'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.75897,-1.93309],[53.7591,-1.93318],[53.75916,-1.9332],[53.75927,-1.93323],[53.75933,-1.93324],[53.75945,-1.93324],[53.75959,-1.93323],[53.75969,-1.9332],[53.75987,-1.93312],[53.76009,-1.93302],[53.76032,-1.93291],[53.76041,-1.93287],[53.7606,-1.9328] ] });
 				GV_Draw_Track(t);
@@ -3073,7 +3073,7 @@
 				// Track #362
 				t = 362; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|115/3'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.76036,-1.92959],[53.76024,-1.92954],[53.76014,-1.92949],[53.7601,-1.92946] ] });
 				GV_Draw_Track(t);
@@ -3081,7 +3081,7 @@
 				// Track #363
 				t = 363; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|115/2'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.76316,-1.93093],[53.76252,-1.93063],[53.76222,-1.93048],[53.76203,-1.93039],[53.76175,-1.93026],[53.76158,-1.93018],[53.76141,-1.9301],[53.76121,-1.93],[53.761,-1.92991],[53.76089,-1.92985],[53.76066,-1.92973],[53.76052,-1.92967],[53.76036,-1.92959] ] });
 				GV_Draw_Track(t);
@@ -3089,7 +3089,7 @@
 				// Track #364
 				t = 364; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|113/5'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.7606,-1.9328],[53.76081,-1.93271],[53.76097,-1.93265],[53.76106,-1.93262],[53.76122,-1.93258],[53.76139,-1.93253],[53.76163,-1.93247],[53.76186,-1.93241],[53.76225,-1.93228],[53.76261,-1.93219],[53.76294,-1.93209],[53.76313,-1.93205],[53.76321,-1.93204] ] });
 				GV_Draw_Track(t);
@@ -3097,7 +3097,7 @@
 				// Track #365
 				t = 365; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|114/4'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.76227,-1.9263],[53.76221,-1.92611],[53.76215,-1.92595],[53.76212,-1.92582],[53.76208,-1.9257],[53.76206,-1.92561],[53.76199,-1.92536],[53.76193,-1.92514] ] });
 				GV_Draw_Track(t);
@@ -3145,7 +3145,7 @@
 				// Track #371
 				t = 371; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|113/11'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.77068,-1.93341],[53.7707,-1.93344],[53.77073,-1.93352],[53.77075,-1.93359],[53.77089,-1.93381],[53.77109,-1.9341],[53.77111,-1.93411],[53.77113,-1.93412],[53.77115,-1.93409],[53.77143,-1.93378],[53.77172,-1.93339],[53.77186,-1.93325],[53.77191,-1.93319],[53.7721,-1.93304] ] });
 				GV_Draw_Track(t);
@@ -3201,7 +3201,7 @@
 				// Track #378
 				t = 378; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|143/4'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.75216,-1.93494],[53.75204,-1.93499],[53.75197,-1.93502],[53.75195,-1.93503],[53.75193,-1.93505],[53.75187,-1.93508],[53.75183,-1.93509],[53.75179,-1.9351],[53.75164,-1.93508],[53.75153,-1.93507],[53.75148,-1.93506],[53.75145,-1.93505],[53.75141,-1.93504],[53.75136,-1.93501],[53.75132,-1.93499],[53.75112,-1.93491],[53.75105,-1.93488],[53.75101,-1.93487],[53.75096,-1.93487],[53.75079,-1.93487],[53.75077,-1.93487],[53.75074,-1.93489],[53.75072,-1.93489],[53.75067,-1.93489],[53.75047,-1.93489],[53.75039,-1.93488],[53.75037,-1.93487],[53.75029,-1.93483] ] });
 				GV_Draw_Track(t);
@@ -3209,7 +3209,7 @@
 				// Track #379
 				t = 379; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|143/3'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.75296,-1.93478],[53.7529,-1.9348],[53.75284,-1.93481],[53.75258,-1.93486],[53.75246,-1.93488],[53.75228,-1.93492],[53.75216,-1.93494] ] });
 				GV_Draw_Track(t);
@@ -3217,7 +3217,7 @@
 				// Track #380
 				t = 380; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|143/2'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.75331,-1.93449],[53.75323,-1.93456],[53.75309,-1.93469],[53.75305,-1.93473],[53.75299,-1.93477],[53.75296,-1.93478] ] });
 				GV_Draw_Track(t);
@@ -3313,7 +3313,7 @@
 				// Track #392
 				t = 392; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|114/3'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.76244,-1.9281],[53.76244,-1.92803],[53.76244,-1.92784],[53.76244,-1.92772],[53.76242,-1.9274],[53.76241,-1.92717],[53.76238,-1.92687],[53.76235,-1.92659],[53.76234,-1.92653],[53.76233,-1.92649],[53.76227,-1.9263] ] });
 				GV_Draw_Track(t);
@@ -7129,7 +7129,7 @@
 				// Track #869
 				t = 869; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|01|23/1'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.78935,-1.9962],[53.78918,-1.99604],[53.78885,-1.99568],[53.78868,-1.9955],[53.78853,-1.99533],[53.78848,-1.99529],[53.78844,-1.99531],[53.78839,-1.99534],[53.78837,-1.99539],[53.78834,-1.99547],[53.78831,-1.99557],[53.78832,-1.99566],[53.78833,-1.99577],[53.78834,-1.9959],[53.78835,-1.996],[53.78838,-1.99629],[53.78839,-1.99646],[53.7884,-1.9966],[53.78841,-1.99674],[53.78843,-1.9969],[53.78844,-1.99703],[53.78844,-1.99711],[53.78843,-1.99728],[53.78842,-1.99738],[53.78841,-1.99745],[53.7884,-1.99751],[53.78838,-1.99755],[53.78832,-1.99773],[53.78828,-1.99782],[53.78826,-1.99788],[53.78819,-1.998],[53.78805,-1.99822],[53.78768,-1.99877],[53.78765,-1.99883],[53.78763,-1.9989],[53.78762,-1.99895],[53.78761,-1.99903],[53.7876,-1.9991],[53.78759,-1.99926],[53.78757,-1.99972],[53.78756,-1.9998],[53.78755,-1.99994],[53.78753,-2.00002],[53.78734,-2.00069],[53.78718,-2.0012],[53.78713,-2.00136],[53.78708,-2.00148],[53.78698,-2.00178],[53.78688,-2.00206],[53.78682,-2.00223],[53.7868,-2.00232],[53.78678,-2.0024],[53.78675,-2.0025],[53.78673,-2.00262],[53.78672,-2.00268],[53.78672,-2.00271],[53.78671,-2.00273],[53.7867,-2.00276],[53.78664,-2.00294],[53.78663,-2.00299],[53.78661,-2.00308],[53.78658,-2.00323],[53.78652,-2.00355],[53.7865,-2.00362],[53.78648,-2.00367],[53.78646,-2.00375],[53.78637,-2.00408],[53.78633,-2.00425],[53.78629,-2.00438],[53.78618,-2.00472],[53.78601,-2.00524],[53.78571,-2.00605],[53.78546,-2.00673],[53.78543,-2.0068],[53.78541,-2.00683],[53.78529,-2.00702],[53.78517,-2.00719],[53.78513,-2.00724],[53.78508,-2.00731],[53.78504,-2.00735],[53.78484,-2.00755],[53.78478,-2.00763],[53.78472,-2.00775],[53.78459,-2.00816],[53.78448,-2.00851],[53.78441,-2.00874],[53.78432,-2.00898],[53.78424,-2.00922],[53.78424,-2.00924],[53.78422,-2.00929],[53.78419,-2.00942],[53.78418,-2.00946],[53.78417,-2.00949],[53.78409,-2.00958],[53.78406,-2.00961],[53.78403,-2.00963],[53.78398,-2.00965],[53.78397,-2.00965] ] });
 				GV_Draw_Track(t);
@@ -8305,7 +8305,7 @@
 				// Track #1016
 				t = 1016; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|68/4'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.77212,-1.90439],[53.77217,-1.90422],[53.7722,-1.90411],[53.77223,-1.90399],[53.77225,-1.9039],[53.77233,-1.90374],[53.77242,-1.90355],[53.77273,-1.90293],[53.77298,-1.90242],[53.77334,-1.90169] ] });
 				GV_Draw_Track(t);
@@ -8313,7 +8313,7 @@
 				// Track #1017
 				t = 1017; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|68/3'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.77147,-1.90926],[53.77139,-1.90879],[53.7713,-1.90824],[53.77127,-1.90798],[53.77126,-1.90786],[53.77125,-1.90773],[53.77126,-1.90756],[53.77128,-1.90747],[53.77132,-1.90731],[53.7715,-1.90664],[53.7717,-1.90586],[53.77183,-1.90536],[53.77212,-1.90439] ] });
 				GV_Draw_Track(t);
@@ -8321,7 +8321,7 @@
 				// Track #1018
 				t = 1018; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|68/2'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.77361,-1.92914],[53.77365,-1.92852],[53.77367,-1.92801],[53.77371,-1.9273],[53.77373,-1.92682],[53.77376,-1.92634],[53.77378,-1.92598],[53.77378,-1.92567],[53.77378,-1.92526],[53.77376,-1.92483],[53.77371,-1.92439],[53.77366,-1.92401],[53.77356,-1.9235],[53.77345,-1.92302],[53.77336,-1.92266],[53.7732,-1.92204],[53.77315,-1.92177],[53.77306,-1.92107],[53.77303,-1.92076],[53.77298,-1.92031],[53.77297,-1.9197],[53.77297,-1.91927],[53.77303,-1.9186],[53.77306,-1.91824],[53.77312,-1.91749],[53.77313,-1.91738],[53.77312,-1.91703],[53.7731,-1.91683],[53.77304,-1.9165],[53.77289,-1.91573],[53.77276,-1.91519],[53.77261,-1.91467],[53.77235,-1.9137],[53.77217,-1.91304],[53.77208,-1.91268],[53.77201,-1.91241],[53.77186,-1.91156],[53.77166,-1.91031],[53.77148,-1.90926] ] });
 				GV_Draw_Track(t);
@@ -8329,7 +8329,7 @@
 				// Track #1019
 				t = 1019; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|68/1'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.77361,-1.92915],[53.7736,-1.92933],[53.77358,-1.9295],[53.77349,-1.92989],[53.77339,-1.93028],[53.77316,-1.93111],[53.7729,-1.93199],[53.77268,-1.93257],[53.77255,-1.9328],[53.77247,-1.93292] ] });
 				GV_Draw_Track(t);
@@ -8593,7 +8593,7 @@
 				// Track #1052
 				t = 1052; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|34/2'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.77306,-1.87802],[53.77308,-1.87799],[53.77309,-1.87796],[53.77311,-1.8779],[53.77311,-1.87789],[53.77313,-1.87788],[53.77313,-1.87787] ] });
 				GV_Draw_Track(t);
@@ -8601,7 +8601,7 @@
 				// Track #1053
 				t = 1053; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|34/1'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.7709,-1.8773],[53.77098,-1.87735],[53.77111,-1.87743],[53.77126,-1.87753],[53.77131,-1.87756],[53.77151,-1.87767],[53.77165,-1.87775],[53.77171,-1.87779],[53.77183,-1.87786],[53.77205,-1.878],[53.77224,-1.87811],[53.77231,-1.87815],[53.77235,-1.87816],[53.77239,-1.87817],[53.77256,-1.8782],[53.77267,-1.87822],[53.77278,-1.87824],[53.77282,-1.87824],[53.77292,-1.87822],[53.77295,-1.87821],[53.77297,-1.87819],[53.77298,-1.87817],[53.773,-1.87815],[53.77302,-1.87812],[53.77303,-1.87809],[53.77306,-1.87802] ] });
 				GV_Draw_Track(t);
@@ -8609,7 +8609,7 @@
 				// Track #1054
 				t = 1054; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|34/3'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.77313,-1.87787],[53.77315,-1.87788],[53.77316,-1.87789],[53.77318,-1.87791],[53.77319,-1.87793],[53.7732,-1.87796],[53.77321,-1.878],[53.77321,-1.87803],[53.77323,-1.87812],[53.77324,-1.87822],[53.77332,-1.87865],[53.77336,-1.87884],[53.77341,-1.87905],[53.77344,-1.87914],[53.77345,-1.87916],[53.77346,-1.87917],[53.77347,-1.87918] ] });
 				GV_Draw_Track(t);
@@ -8633,7 +8633,7 @@
 				// Track #1057
 				t = 1057; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|1/6'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.78124,-1.91534],[53.78122,-1.91509],[53.7812,-1.91498],[53.78119,-1.91487],[53.7811,-1.91438],[53.78107,-1.91405],[53.78103,-1.91378],[53.78101,-1.91366],[53.78097,-1.91349] ] });
 				GV_Draw_Track(t);
@@ -8641,7 +8641,7 @@
 				// Track #1058
 				t = 1058; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|1/9'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.77833,-1.90417],[53.77818,-1.90394],[53.77794,-1.90363],[53.77768,-1.90331],[53.77759,-1.9032],[53.77731,-1.90281],[53.7772,-1.90266],[53.77714,-1.9026],[53.77707,-1.90257],[53.77701,-1.90255],[53.77697,-1.90254],[53.77694,-1.90253] ] });
 				GV_Draw_Track(t);
@@ -8649,7 +8649,7 @@
 				// Track #1059
 				t = 1059; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|1/10'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.77694,-1.90253],[53.77691,-1.90253],[53.77686,-1.90245],[53.77668,-1.90215],[53.77648,-1.90183],[53.7764,-1.90171],[53.77613,-1.90125],[53.77595,-1.90094],[53.7759,-1.90085],[53.77585,-1.90075],[53.7758,-1.90064],[53.7757,-1.90033],[53.77554,-1.89992],[53.7754,-1.89954],[53.77522,-1.89906],[53.77509,-1.8987],[53.77505,-1.89859],[53.775,-1.89839],[53.77494,-1.89811],[53.77483,-1.89757],[53.77477,-1.89733] ] });
 				GV_Draw_Track(t);
@@ -8657,7 +8657,7 @@
 				// Track #1060
 				t = 1060; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|1/7'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.78097,-1.91349],[53.78095,-1.91339],[53.78088,-1.91274],[53.78081,-1.91196],[53.78076,-1.91149],[53.78068,-1.91061],[53.78065,-1.91033],[53.78063,-1.91024],[53.78059,-1.9101],[53.78052,-1.9099],[53.78025,-1.90912],[53.78012,-1.90873],[53.77994,-1.9082],[53.77987,-1.90801],[53.77976,-1.90772],[53.77965,-1.90752],[53.77944,-1.90709],[53.77919,-1.90662],[53.77905,-1.90634],[53.77898,-1.90621],[53.77894,-1.90612],[53.77889,-1.90603] ] });
 				GV_Draw_Track(t);
@@ -8665,7 +8665,7 @@
 				// Track #1061
 				t = 1061; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|1/8'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.77889,-1.90603],[53.77886,-1.90595],[53.77876,-1.90552],[53.77867,-1.90515],[53.77862,-1.90496],[53.77856,-1.90472],[53.77853,-1.90463],[53.77848,-1.9045],[53.77841,-1.90433],[53.77833,-1.90417] ] });
 				GV_Draw_Track(t);
@@ -8713,7 +8713,7 @@
 				// Track #1067
 				t = 1067; trk[t] = {info:[],segments:[]};
 				trk[t].info.name = 'CA|09|7/1'; trk[t].info.desc = ''; trk[t].info.clickable = true;
-				trk[t].info.color = '#0000e6'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
+				trk[t].info.color = '#FF5733'; trk[t].info.width = 3; trk[t].info.opacity = 0.9; trk[t].info.hidden = false; trk[t].info.z_index = null;
 				trk[t].info.outline_color = 'black'; trk[t].info.outline_width = 0; trk[t].info.fill_color = '#0000e6'; trk[t].info.fill_opacity = 0;
 				trk[t].segments.push({ points:[ [53.77889,-1.90603],[53.77897,-1.90602],[53.77911,-1.90603],[53.77926,-1.90605],[53.77996,-1.90617],[53.78052,-1.90628],[53.78066,-1.9063],[53.78085,-1.90633],[53.78124,-1.90638],[53.78126,-1.90638] ] });
 				GV_Draw_Track(t);
