@@ -1,9 +1,7 @@
-<p>
-  <a href="https://picocss.com" target="_blank">
-      </a>
-</p>
+Displaying Hillwalking routes on the web with GPX files and Leaflet by Alistari Shepherd
+https://alistairshepherd.uk/writing/hillwalking-maps-with-leaflet/
 
+https://codepen.io/accudio/pen/YzjeBMK
 
-Developed using picoss - a pure HTML example, without dependencies.
-
-[![Open in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/picocss/examples/tree/master/v2-html)
+Thunderforest mapping tiles
+https://manage.thunderforest.com/dashboard
