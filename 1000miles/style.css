@@ -1,0 +1,28 @@
+#map {
+    height: 400px; /* Adjust as needed */
+    width: 80%; /* Adjust as needed */
+    margin: 20px auto;
+}
+
+#track-list {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#track-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#track-list li {
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+#statistics {
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}

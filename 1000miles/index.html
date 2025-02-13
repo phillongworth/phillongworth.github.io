@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GPX Track Viewer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIINUPaz+cpJwKWKoSWYu9SyJ+pzQP5byIU="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20vWipp63Jr/RjuS0ypWnrJLxmcmmqAYX/t6O8vPzPA="
+            crossorigin=""></script>
+</head>
+<body>
+    <h1>GPX Track Viewer</h1>
+
+    <div id="map"></div>
+
+    <div id="track-list">
+        <h2>Tracks</h2>
+        <ul id="tracks"></ul>
+    </div>
+
+    <div id="statistics">
+        <h2>Overall Statistics</h2>
+        <p>Total Distance: <span id="total-distance">0</span> km</p>
+        <p>Total Elevation Gain: <span id="total-elevation-gain">0</span> m</p>
+    </div>
+
+    <input type="file" id="gpx-upload" accept=".gpx" multiple>
+
+    <script src="script.js"></script>
+</body>
+</html>
