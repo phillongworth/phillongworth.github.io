@@ -8,27 +8,18 @@
     <style>
         #map { height: 600px; }
         #file-input { margin-top: 10px; }
-        body {
-            font-family: 'Arial', sans-serif;
-        }
-        table {
-            width: 100%;
+        body { font-family: 'Arial', sans-serif;        }
+        table { width: 90%;
             border-collapse: collapse;
-            margin-top: 20px;
-        }
-        th, td {
-            border: 1px solid #ddd;
+            margin-top: 20px;        }
+        th, td {            border: 1px solid #ddd;
             padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        #summary {
-            margin-top: 20px;
-            font-size: 1.2em;
-        }
+            text-align: left;        }
+        th {            background-color: #f2f2f2;        }
+        #summary {            margin-top: 20px;
+            font-size: 1.2em;        }
     </style>
+    
 </head>
 <body>
     <div id="map"></div>
@@ -48,6 +39,17 @@
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-gpx/gpx.js"></script>
+    <!--
+    <script>
+        const supabaseUrl = 'https://htbsngkvgywmvqcqiosc.supabase.co';
+        const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh0YnNuZ2t2Z3l3bXZxY3Fpb3NjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzkzODE4MTgsImV4cCI6MjA1NDk1NzgxOH0.ycup-gb4sNUm9MbsX7Wxh9TJ7jKwSwLYWkG5Gj-Wr9s';
+        const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+      </script>
+    -->
     <script src="app.js"></script>
+    <!-- Add Supabase SDK 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+-->
+    
 </body>
 </html>
