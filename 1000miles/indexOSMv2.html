@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>1000m in 2025 GPX Tracks (OpenStreetMap)</title>
+    <title>GPX Tracks with OpenStreetMap and Pie Charts</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,10 +13,12 @@
         #map {
             height: 600px;
         }
-        #track-table, #summary-table {
+        #track-table, #summary-table, .chart-container {
             margin-top: 20px;
-            width: 60%; /* Adjust the width as needed */
+            width: 80%; /* Adjust the width as needed */
             border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
         }
         #track-table th, #track-table td, #summary-table th, #summary-table td {
             border: 1px solid #ddd;
@@ -28,6 +31,14 @@
         #track-table td:nth-child(2), #track-table td:nth-child(3), #track-table td:nth-child(4),
         #summary-table td:nth-child(2) {
             text-align: right;
+        }
+        .chart-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        canvas {
+            width: 48% !important;
+            height: auto !important;
         }
     </style>
 </head>
@@ -67,12 +78,16 @@
             </tr>
         </tbody>
     </table>
+    <div class="chart-container">
+        <canvas id="distanceChart"></canvas>
+        <canvas id="elevationChart"></canvas>
+    </div>
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-gpx/gpx.js"></script>
     <script>
         // Initialize the map and set its view
-        var map = L.map('map').setView([53.615, -1.910], 13);
+        var map = L.map('map').setView([51.505, -0.09], 13);
 
         // Add an OpenStreetMap tile layer to the map
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -137,6 +152,7 @@
                 // Sort and update table when all tracks are loaded
                 if (tracksData.length === gpxFiles.length) {
                     updateTrackTable();
+                    updateCharts();
                 }
             }).addTo(map);
         }
@@ -162,16 +178,74 @@
             });
         }
 
+        // Function to update the pie charts
+        function updateCharts() {
+            // Distance Chart
+            var distanceCtx = document.getElementById('distanceChart').getContext('2d');
+            var distanceChart = new Chart(distanceCtx, {
+                type: 'pie',
+                data: {
+                    labels: ['Distance Covered', 'Remaining'],
+                    datasets: [{
+                        data: [totalDistance, 1000 - totalDistance],
+                        backgroundColor: ['#36a2eb', '#ffcd56']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(tooltipItem) {
+                                    return tooltipItem.label + ': ' + tooltipItem.raw + ' miles';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Elevation Chart
+            var elevationCtx = document.getElementById('elevationChart').getContext('2d');
+            var elevationChart = new Chart(elevationCtx, {
+                type: 'pie',
+                data: {
+                    labels: ['Elevation Gained', 'Remaining'],
+                    datasets: [{
+                        data: [totalElevation, 10000 - totalElevation],
+                        backgroundColor: ['#ff6384', '#ff9f40']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(tooltipItem) {
+                                    return tooltipItem.label + ': ' + tooltipItem.raw + ' feet';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
         // Add multiple GPX tracks (up to 100)
         var gpxFiles = [
-            'https://raw.githubusercontent.com/phillongworth/phillongworth.github.io/refs/heads/main/1000miles/1001.gpx',
+        'https://raw.githubusercontent.com/phillongworth/phillongworth.github.io/refs/heads/main/1000miles/1001.gpx',
             'https://raw.githubusercontent.com/phillongworth/phillongworth.github.io/refs/heads/main/1000miles/1002.gpx',
             'https://raw.githubusercontent.com/phillongworth/phillongworth.github.io/refs/heads/main/1000miles/1003.gpx',
             'https://raw.githubusercontent.com/phillongworth/phillongworth.github.io/refs/heads/main/1000miles/1004.gpx',
             'https://raw.githubusercontent.com/phillongworth/phillongworth.github.io/refs/heads/main/1000miles/1005.gpx',
             'https://raw.githubusercontent.com/phillongworth/phillongworth.github.io/refs/heads/main/1000miles/1006.gpx',
-            'https://raw.githubusercontent.com/phillongworth/phillongworth.github.io/refs/heads/main/1000miles/1007.gpx',
-
+    	    'https://raw.githubusercontent.com/phillongworth/phillongworth.github.io/refs/heads/main/1000miles/1007.gpx',
             // Add up to 100 GPX file paths here
             // Example: 'path/to/your/track4.gpx', 'path/to/your/track5.gpx', ...
         ];
