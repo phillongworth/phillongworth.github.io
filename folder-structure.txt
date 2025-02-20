@@ -1,0 +1,28 @@
+Explanation:
+/assets: Contains static files like CSS, JavaScript, and images.
+
+/css: Stylesheets for your website.
+/js: JavaScript files.
+/images: Image files used in your website.
+/pages: HTML files for different pages of your website.
+
+index.html: The main page.
+about.html: About page.
+contact.html: Contact page.
+/components: Reusable HTML components like headers, footers, and navigation bars.
+
+/data: JSON or other data files used by your website.
+
+/docs: Documentation files for your project.
+
+/fonts: Custom font files.
+
+/libs: Third-party libraries and frameworks.
+
+/templates: Base templates or layouts that other pages can extend.
+
+.gitignore: Specifies files and directories that Git should ignore.
+
+README.md: Project documentation.
+
+package.json: If you're using Node.js or npm for managing dependencies.
